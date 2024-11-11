@@ -64,6 +64,7 @@ body {
   display: flex;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hamburger-home,
@@ -71,6 +72,7 @@ body {
 .hamburger-contact {
   text-decoration: none;
   color: rgba(10, 54, 65, 1);
+  text-decoration: none;
 }
 
 .header-right {
@@ -260,6 +262,7 @@ main {
 .footer-about,
 .footer-contact {
   cursor: pointer;
+  text-decoration: none;
 }
 
 .footer-right {
@@ -322,16 +325,12 @@ main {
   cursor: pointer;
 }
 
-/* General styles */
-
-/* Hamburger button for small screens */
 .hamburger-icon {
   display: none;
   font-size: 2rem;
   cursor: pointer;
 }
 
-/* Responsive styling */
 @media only screen and (max-width: 800px) {
   .hamburger-icon {
     display: block;
@@ -339,19 +338,16 @@ main {
     padding-right: 1rem;
   }
 
-  /* Hide the full menu and show only hamburger */
   .hamburger-menu {
     flex-direction: column;
     position: absolute;
     top: 70px;
-    /* Below the header */
     width: 100%;
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1rem 0;
   }
 
-  /* Show menu when 'show' class is active */
   .hamburger-menu.show {
     display: flex;
   }
@@ -410,7 +406,9 @@ main {
 button[type="submit"] {
   margin-top: 10%;
   padding: 5%;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 2%;
+  border: none;
   background-color: rgba(10, 54, 65, 1);
   color: white;
   justify-content: center;

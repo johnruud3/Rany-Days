@@ -129,76 +129,69 @@ body {
   height: 2rem;
 }
 
-.category-info {
+.form-container form label,
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+  display: block;
+  text-align: center;
   justify-self: center;
-  z-index: 5;
+  width: 25%;
+  height: 30px;
+  margin-top: 10px;
 }
 
-.checkout-header {
-  position: absolute;
-  z-index: 10;
+.form-container form select {
+  cursor: pointer;
+}
+
+.form-container form textarea {
+  width: 40%;
+  height: 340px;
+  text-align: left;
+}
+
+.button-container {
+  margin-bottom: 15%;
   text-align: center;
-  right: 0;
-  left: 0;
-  top: 180px;
-  font-size: 200%;
-}
-
-@media only screen and (max-width: 350px) {
-  .checkout-header {
-    font-size: 130%;
-  }
-}
-
-.Thanks-text {
-  position: absolute;
-  z-index: 10;
-  text-align: center;
-  right: 0;
-  left: 0;
-  top: 400px;
-  font-size: 100%;
-}
-
-@media only screen and (max-width: 350px) {
-  .Thanks-text {
-    font-size: 80%;
-    top: 250px;
-  }
+  margin-top: 5%;
 }
 
 .button-continue {
-  position: absolute;
   background-color: rgba(10, 54, 65, 1);
   padding: 1%;
   border: none;
   border-radius: 1%;
-  z-index: 10;
-  right: 0;
-  left: 0;
   top: 800px;
   font-size: 100%;
   width: 290px;
-  margin: auto;
   font-family: "Poppins", sans-serif;
   color: white;
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 600px) {
   .button-continue {
     top: 300px;
-    width: 200px;
+    width: 150px;
+  }
+
+  .form-container form label,
+  .form-container form input,
+  .form-container form select,
+  .form-container form textarea {
+    font-size: 13px;
+    width: 40%;
+  }
+
+  .form-container form textarea {
+    width: 60%;
+    height: 150px;
   }
 }
 
 .button-continue:hover {
   background: rgb(180, 180, 180);
   cursor: pointer;
-}
-
-.confetti-pic {
-  position: relative;
-  width: 100%;
 }
 
 .footer {

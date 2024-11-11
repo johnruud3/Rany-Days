@@ -13,8 +13,8 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Checkout Succes</title>
-    <link rel="stylesheet" href="/styles/checkout-succes.css" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="/styles/contact.css" />
   </head>
 
   <body>
@@ -33,7 +33,7 @@
         <nav class="header-mid-buttons">
           <a class="hamburger-home" href="/headerpage.html">Home</a>
           <a class="hamburger-about" href="/about.html">About</a>
-          <a class="hamburger-contact" href="/Contact.html">Contact</a>
+          <div class="hamburger-contact">Contact</div>
         </nav>
       </div>
       <div class="header-right">
@@ -50,41 +50,55 @@
     </header>
 
     <main>
-      <div class="category-info">
-        <h1 class="checkout-header">Checkout Success!</h1>
-        <img class="confetti-pic" src="/Pictures/Confetti.png" />
-        <h1 class="Thanks-text">Thank you for your order!</h1>
-        <div>
-          <a href="/headerpage.html">
+      <div class="form-container">
+        <form>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" />
+
+          <label for="fname">Full Fame:</label>
+          <input type="text" id="fname" name="fullname" />
+
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="england">England</option>
+            <option value="sweden">Sweden</option>
+            <option value="norway">Norway</option>
+          </select>
+
+          <label for="subject">Subject:</label>
+          <textarea id="subject" name="subject"></textarea>
+
+          <div class="button-container" href="/headerpage.html">
             <button class="button-continue">Continue</button>
-          </a>
-        </div>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <img class="footer-logo" src="/Pictures/RainyDays_Logo.png" />
       </div>
 
-      <footer class="footer">
-        <div class="footer-left">
-          <img class="footer-logo" src="/Pictures/RainyDays_Logo.png" />
-        </div>
+      <div class="footer-middle">
+        <a class="footer-home" href="/headerpage.html">Home</a>
+        <a class="footer-about" href="/about.html">About</a>
+        <div class="footer-contact">Contact</div>
+      </div>
 
-        <div class="footer-middle">
-          <a class="footer-home" href="/headerpage.html">Home</a>
-          <a class="footer-about" href="/about.html">About</a>
-          <a class="footer-contact" href="/Contact.html">Contact</a>
+      <div class="footer-right">
+        <div class="instagram">
+          <img class="instagram-pic" src="/Pictures/Social media/instagram.png" />
         </div>
-
-        <div class="footer-right">
-          <div class="instagram">
-            <img class="instagram-pic" src="/Pictures/Social media/instagram.png" />
-          </div>
-          <div class="twitter">
-            <img class="twitter-pic" src="/Pictures/Social media/twitter.png" />
-          </div>
-          <div class="facebook">
-            <img class="facebook-pic" src="/Pictures/Social media/Facebook.png" />
-          </div>
+        <div class="twitter">
+          <img class="twitter-pic" src="/Pictures/Social media/twitter.png" />
         </div>
-      </footer>
-    </main>
+        <div class="facebook">
+          <img class="facebook-pic" src="/Pictures/Social media/Facebook.png" />
+        </div>
+      </div>
+    </footer>
 
     <script>
       function toggleMenu() {

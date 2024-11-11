@@ -11,7 +11,7 @@
     rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Test</title>
+  <title>Header Page</title>
   <link rel="stylesheet" href="/styles/headerpage.css">
 </head>
 
@@ -20,11 +20,23 @@
     <div class="header-left">
       <img class="Header-logo" src="/Pictures/RainyDays_Logo.png">
     </div>
+
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span class="material-symbols-outlined">menu</span>
+  </div>
+
+  <div class="hamburger-menu" id="mobileMenu">
+      <nav class="header-mid-buttons">
+          <a class="hamburger-home" href="/headerpage.html">Home</a>
+          <a class="hamburger-about" href="/about.html">About</a>
+          <a class="hamburger-contact" href="/Contact.html">Contact</a>
+      </nav>
+  </div>
     <div class="nav-menu">
       <nav class="header-mid-buttons">
         <div class="home-button">Home</div>
-        <div class="about-button">About</div>
-        <div class="contact-button">Contact</div>
+        <a class="about-button" href="/about.html">About</a>
+        <a class="contact-button" href="/Contact.html">Contact</a>
       </nav>
       <div class="header-right">
         <input class="search-bar" type="text" placeholder="Search">
@@ -68,6 +80,7 @@
 
       <div class="jacket-container">
         <div class="image-wrapper">
+          <a class="a" href="/productsite2.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket2.png">
         </div>
         <div class="jacket-information">
@@ -77,6 +90,7 @@
             <img class="checkout-top-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
     </div>
 
@@ -109,6 +123,7 @@
 
     <div class="jacket-grid2">
       <div class="jacket-container2">
+        <a class="a" href="/productsite3.html">
         <div class="image-wrapper">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket3.png">
         </div>
@@ -119,10 +134,12 @@
             <img class="checkout1-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
 
       <div class="jacket-container2">
         <div class="image-wrapper">
+          <a class="a" href="/productsite4.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket4.png">
         </div>
         <div class="jacket-information">
@@ -132,10 +149,12 @@
             <img class="checkout1-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
 
       <div class="jacket-container2">
         <div class="image-wrapper">
+          <a class="a" href="/productsite5.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket7.png">
         </div>
         <div class="jacket-information">
@@ -145,10 +164,12 @@
             <img class="checkout1-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
 
       <div class="jacket-container2">
         <div class="image-wrapper">
+          <a class="a" href="/productsite6.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket5.png">
         </div>
         <div class="jacket-information">
@@ -158,10 +179,12 @@
             <img class="checkout1-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
 
       <div class="jacket-container2">
         <div class="image-wrapper">
+          <a class="a" href="/productsite7.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket6.png">
         </div>
         <div class="jacket-information">
@@ -171,10 +194,12 @@
             <img class="checkout1-pic" src="/Pictures/checkout.png">
           </div>
         </div>
+      </a>
       </div>
 
       <div class="jacket-container2">
         <div class="image-wrapper">
+          <a class="a" href="/productsite2.html">
           <img class="jacket1-pic" src="/Pictures/motojackets/motojacket2.png">
         </div>
         <div class="jacket-information">
@@ -185,6 +210,7 @@
           </div>
         </div>
       </div>
+    </a>
     </div>
 
     <div class="newsletter">
@@ -215,8 +241,8 @@
 
     <div class="footer-middle">
       <div class="footer-home">Home</div>
-      <div class="footer-about">About</div>
-      <div class="footer-contact">Contact</div>
+      <a class="footer-about" href="/about.html">About</a>
+      <a class="footer-contact" href="/Contact.html">Contact</a>
     </div>
 
 
@@ -234,6 +260,12 @@
 
   </footer>
 
+  <script>
+    function toggleMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('show');
+    }
+</script>
 </body>
 
 </html>
